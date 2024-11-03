@@ -1,3 +1,5 @@
+package lab2
+
 class Queue<T> {
     private var front: Node<T>? = null
     private var rear: Node<T>? = null

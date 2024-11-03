@@ -1,17 +1,18 @@
 package lab2
 
-import lab2.CustomList
-
 class Orden {
-    var nombre: String
-    var pupusas = CustomList();
+    var nombre: String = ""
+    var pupusas = CustomList<String>()
 
     fun añadir(tipo: String) {
-        pupusas.añadir(tipo)
+        pupusas.add(tipo)
     }
 
-    override fun toString() {
-        print("${nombre}: ")
-        pupusas.toString()
+    override fun toString(): String {
+        val sb = StringBuilder()
+        sb.append("${nombre}: ")
+        sb.append(pupusas.toString())
+
+        return sb.toString()
     }
 }

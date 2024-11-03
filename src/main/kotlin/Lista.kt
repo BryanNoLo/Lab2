@@ -1,4 +1,4 @@
-import lab2.Node
+package lab2
 
 class CustomList<T> {
     private var head: Node<T>? = null

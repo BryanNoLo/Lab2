@@ -1,3 +1,5 @@
+package lab2
+
 class Stack<T> {
     private var top: Node<T>? = null
     var size: Int = 0
